@@ -1,0 +1,15 @@
+{
+    "id": "hideshoyama/allstate-claims-severity-analysis",
+    "title": "Allstate Claims Severity Analysis",
+    "code_file": "analysis.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": false,
+    "enable_internet": true,
+    "dataset_sources": [],
+    "competition_sources": [
+        "allstate-claims-severity"
+    ],
+    "kernel_sources": []
+}
