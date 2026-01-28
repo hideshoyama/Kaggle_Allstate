@@ -1,0 +1,22 @@
+# Kaggle API key
+kaggle.json
+
+# Large data files
+input/
+*.csv
+*.zip
+*.7z
+
+# Python/Jupyter cache and intermediates
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+venv/
+env/
+.env
