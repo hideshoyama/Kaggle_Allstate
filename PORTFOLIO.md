@@ -23,22 +23,22 @@ Allstate（保険会社）の損害額（loss）を予測する回帰モデル�
 
 ```mermaid
 graph LR
-    Data[Raw Data] --> Pre[Preprocessing<br>(Log Transform / One-Hot)]
+    Data["Raw Data"] --> Pre["Preprocessing<br>(Log Transform / One-Hot)"]
     
-    Pre --> XGB[XGBoost<br>(Tree Logic)]
-    Pre --> LGB[LightGBM<br>(Speed & Accuracy)]
-    Pre --> NN[Neural Network<br>(Non-linear / Scaled)]
+    Pre --> XGB["XGBoost<br>(Tree Logic)"]
+    Pre --> LGB["LightGBM<br>(Speed & Accuracy)"]
+    Pre --> NN["Neural Network<br>(Non-linear / Scaled)"]
     
-    XGB --> Pred1[Prediction 1]
-    LGB --> Pred2[Prediction 2]
-    NN  --> Pred3[Prediction 3]
+    XGB --> Pred1["Prediction 1"]
+    LGB --> Pred2["Prediction 2"]
+    NN  --> Pred3["Prediction 3"]
     
-    Pred1 --> Opt[Optimizer<br>(SLSQP / Nelder-Mead)]
+    Pred1 --> Opt["Optimizer<br>(SLSQP / Nelder-Mead)"]
     Pred2 --> Opt
     Pred3 --> Opt
     
-    Opt --> Final[Weighted Average<br>(Ensemble)]
-    Final --> Sub[Submission.csv<br>(MAE: 1129.77)]
+    Opt --> Final["Weighted Average<br>(Ensemble)"]
+    Final --> Sub["Submission.csv<br>(MAE: 1129.77)"]
     
     style Opt fill:#f9f,stroke:#333,stroke-width:2px
     style Final fill:#bfb,stroke:#333,stroke-width:2px
